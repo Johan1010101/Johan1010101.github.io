@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cheat Sheet</title>
+</head>
+<body>
+    <header>
+        <h1 class="head">How to build an Html Table</h1>
+    </header>   
+    <div>  
+    <ol>
+      <li>Create the table element</li>
+      <li>(optional)Set a caption using caption element</li>
+      <li>Create the thead element nested in the table</li>
+      <li>Use tr to create the first row</li>
+      <li>Use th scope="col" to specify column headings, only th, never td, can be used with "scope"</li>
+      <li>Close the thead element and open the tbody element</li>
+      <li>Creat rows with the tr element</li>
+      <li>Use th scope="row" to lable the first cell of each row</li>
+      <li>Use td to fill the cells with info</li>
+      <li>Use colspan=? to specificy if cell fills multiple columns</li>
+      <li>Use rowspan=? if cell spans multiple rows</li>
+      <li>Close the body</li>
+      <li>(optional) Use tfoot to create a footer (don't forget the tr)</li>
+    </ol>
+    </div>
+    <div>
+        <Table>
+            <caption>
+                HTML table
+            </caption>
+            <thead>
+                <tr>
+                    <th scope="col">Column 1 header</th>
+                    <th scope="col">Column 2 header</th>
+                    <th scope="col">Column 3 header</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">Row 2 header</th>
+                    <td>Column 2 info</td>
+                    <td>Column 3 info</td>
+                </tr>
+                <tr>
+                    <th scope="row">Row 3 header</th>
+                    <td colspan="2">Row spanning 2 columns</td>
+                </tr>
+                <tr>
+                    <th scope="row" rowspan="2">Cell spanning two rows</th>
+                    <td>Cell spanning 1 row</td>
+                    <td>Cell spanning 1 row</td>
+                </tr>
+                <tr>
+                    <td>You get the idea</td>
+                    <td>Or do you?</td>
+                </tr>
+            </tbody>
+             <tfoot>
+                <tr>    
+                  <th scope="row">This is the footer</th>
+                  <td>Footer cell</td>
+                  <td>Footer cell</td>
+                </tr>
+              </tfoot>
+        </Table>
+            
+    </div>
+
+
+</body>
+</html>
